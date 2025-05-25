@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name = "tb_cadastro_de_ninjas")
+@Table(name = "tb_cadastro")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -34,8 +34,6 @@ public class NinjaModel {
     @ManyToOne
     @JoinColumn(name = "missoes_id") // Foreign key ou chave estrangeira
     private MissoesModel missoes;
-
-    private String corDoOlho;
 
 
 }
